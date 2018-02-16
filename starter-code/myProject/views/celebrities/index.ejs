@@ -1,12 +1,12 @@
 <h2>Las Celebridades</h2>
 
-
 <ul>
-  <% celebrities.forEach(function(celebrities){ %>
+    <% for(let i = 0; i < celebrities.length; i++) { %>
       <li>
-          <a href="/celebrities/<%=celebrity.name%>">
-              <h2>Titulo: <%=celebrity.name%></h2>
-          </a>
+        <h3>Nombre: <%= celebrities[i].name %></h3>
+        <h3>Ocupacion: <%= celebrities[i].occupation %></h3>
+        <h3>Frase: <%= celebrities[i].catchPhrase %></h3>
       </li>
- <% }) %>
+      <% } %>
+  
 </ul>

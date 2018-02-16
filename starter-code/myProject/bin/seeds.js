@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/celebridades");
-const Celebrity = require("./models/Celebrity.js");
+mongoose.connect("mongodb://localhost:27017/celebrities");
+const Celebrity = require("../models/Celebrity.js");
 
 const celebrityData = [
   { 
@@ -25,4 +25,4 @@ Celebrity.create(celebrityData, function(err, result){
   console.log("It works!", result);
 });
 
-mongoose.connect.close();
+// mongoose.connect.close();
