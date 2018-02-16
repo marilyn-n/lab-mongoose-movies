@@ -3,7 +3,7 @@
 <ul>
     <% for(let i = 0; i < celebrities.length; i++) { %>
       <li>
-        <a href="/celebrities/:id"><%= celebrities[i].name %></a>
+        <a href="/celebrities/:id/<%= celebrities[i].id%>"><%= celebrities[i].name %></a>
       </li>
       <% } %>
   
