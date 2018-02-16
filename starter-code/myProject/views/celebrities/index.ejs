@@ -3,10 +3,10 @@
 <ul>
     <% for(let i = 0; i < celebrities.length; i++) { %>
       <li>
-        <h3>Nombre: <%= celebrities[i].name %></h3>
-        <h3>Ocupacion: <%= celebrities[i].occupation %></h3>
-        <h3>Frase: <%= celebrities[i].catchPhrase %></h3>
+        <a href="/celebrities/:id"><%= celebrities[i].name %></a>
       </li>
       <% } %>
   
 </ul>
+
+
